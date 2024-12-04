@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+
+.btn-hover:hover {
+    background-color: black;
+    color: bisque;
+    font-weight: 800 !important;
+    transition: 1s;
+    border-radius: 10px;
+}
+
 .plus-jakarta {
     font-family: "Plus Jakarta Sans";
 }
@@ -20,6 +29,10 @@
         font-weight: 500;
         line-height: 26px;
         color: rgba(255, 255, 255, 1);
+    }
+
+    li.nav-item>a:hover {
+        color: bisque;
     }
 }
 
@@ -48,9 +61,12 @@ button[aria-expanded="false"] span.cross {
 }
 
 .bg-img {
-    background-image: url(../image/sec-1-bg.png);
+    background-image: url(../image/sec-1-bg.png) !important;
     height: 100%;
     width: 100%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 .Elevating {
@@ -86,7 +102,7 @@ button[aria-expanded="false"] span.cross {
 
 .btn-seemore {
     border: 1px solid black;
-    padding: 10px 30px;
+    padding: 15px 50px;
     background-color: white;
     font-size: 16px;
     font-weight: 500;
@@ -121,12 +137,6 @@ button[aria-expanded="false"] span.cross {
     line-height: 20.16px;
 }
 
-.tr-bgimg
-{
-    background-image: url(../image/sec-4-img.png);
-    max-width: 1140px;
-    height: 161px;
-}
 
 .heading {
     color: rgb(58, 58, 58);
@@ -135,6 +145,133 @@ button[aria-expanded="false"] span.cross {
     line-height: 43.2px;
 }
 
+.black-box {
+    border: 1px solid rgb(179, 179, 179);
+    min-height: 267px;
+    padding: 10px;
+}
+
+.numberic {
+
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 57.6px;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.7px;
+    color: rgb(58, 58, 58);
+}
+
+.mt {
+    margin-top: 150px;
+}
+
+img[alt="logo"] {
+    float: right;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.section-4 {
+    margin-top: 80px;
+}
+
+.ms-600 {
+    margin-left: 600px;
+}
+
+#textarea {
+    resize: none !important;
+}
+
+.submit-btn {
+    background-color: white;
+    padding: 15px 50px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.16px;
+}
+
+footer {
+    li {
+        padding-bottom: 10px;
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(206, 206, 206);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21.7px;
+    }
+}
+
+.footer-line {
+    border: 1px solid rgb(206, 206, 206);
+    width: 100%;
+}
+
+.copyright {
+    color: rgb(206, 206, 206);
+    text-align: center;
+}
+
+.we-turn {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.7px;
+    color: rgb(206, 206, 206);
+}
+
+.bg-img {
+    background-image: url(../image/sec-4-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    border: 1px solid red;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.footer {
+    li {
+        padding: 0;
+        margin: 0;
+        padding-bottom: 7px;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+input,
+textarea {
+    border: 1px solid rgb(179, 179, 179);
+}
+
+::placeholder {
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.7px;
+    color: black;
+}
+
+.section-2 {
+    margin-top: 120px;
+}
 
 @media (min-width:992px) {
     img[alt="logo.img"] {
@@ -147,16 +284,20 @@ button[aria-expanded="false"] span.cross {
         right: 7%;
         top: 1%;
     }
-
-    .flex-col-reverse {
-        flex-direction: column-reverse;
-    }
 }
 
-
 @media (max-width:575px) {
-    .Elevating {
+
+    .Elevating,
+    .you-deserve,
+    .our-services {
         font-size: 45px;
         line-height: 50px;
     }
+
+    .btn-see-all {
+        padding: 10px;
+        border-radius: 12px;
+    }
+
 }
