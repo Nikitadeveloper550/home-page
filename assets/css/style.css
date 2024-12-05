@@ -3,10 +3,29 @@
 
 .btn-hover:hover {
     background-color: black;
-    color: bisque;
-    font-weight: 800 !important;
+    color: white;
     transition: 1s;
     border-radius: 10px;
+}
+
+.mb-60{
+    margin-bottom: 60px;
+}
+.mt-140
+{
+    margin-top: 140px;
+}
+
+.mb-140 {
+    margin-bottom: 140px;
+}
+
+.container-hero {
+    max-width: 1440px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
 }
 
 .plus-jakarta {
@@ -25,20 +44,19 @@
     }
 
     li.nav-item>a {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
-        line-height: 26px;
+        line-height: 20.16px;
         color: rgba(255, 255, 255, 1);
     }
 
     li.nav-item>a:hover {
-        color: bisque;
+        color: rgba(255, 0, 0, 0.772);
     }
 }
 
 .navbar {
-    --bs-navbar-padding-y: 1rem !important;
-    --bs-navbar-padding-x: 1rem !important;
+    --bs-navbar-padding-y: 23px !important;
 }
 
 button[aria-expanded="false"] span.lines {
@@ -76,6 +94,14 @@ button[aria-expanded="false"] span.cross {
     line-height: 76.8px;
 }
 
+.pb-5 {
+    padding-bottom: 40px !important;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
 .last-text {
     right: 60px;
     bottom: 10px;
@@ -102,7 +128,7 @@ button[aria-expanded="false"] span.cross {
 
 .btn-seemore {
     border: 1px solid black;
-    padding: 15px 50px;
+    padding: 20px 66.5px;
     background-color: white;
     font-size: 16px;
     font-weight: 500;
@@ -130,7 +156,7 @@ button[aria-expanded="false"] span.cross {
 
 .btn-see-all {
     border: 1px solid black;
-    padding: 10px 30px;
+    padding: 20px 43.5px;
     background-color: white;
     font-size: 16px;
     font-weight: 500;
@@ -152,7 +178,6 @@ button[aria-expanded="false"] span.cross {
 }
 
 .numberic {
-
     font-size: 48px;
     font-weight: 800;
     line-height: 57.6px;
@@ -269,13 +294,16 @@ textarea {
     color: black;
 }
 
-.section-2 {
-    margin-top: 120px;
-}
 
 @media (min-width:992px) {
     img[alt="logo.img"] {
-        left: 45%;
+        left: 50%;
+        top: 6px;
+        transform: translateX(-50%);
+    }
+
+    .navbar li {
+        padding-left: 35px;
     }
 }
 
@@ -283,7 +311,10 @@ textarea {
     img[alt="logo.img"] {
         right: 7%;
         top: 1%;
+        padding: 16px 0 !important;
     }
+
+
 }
 
 @media (max-width:575px) {
