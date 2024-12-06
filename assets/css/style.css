@@ -1,18 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-
 .btn-hover:hover {
-    background-color: black;
-    color: white;
-    transition: 1s;
-    border-radius: 10px;
+    animation: pulse 1s infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.342);
+    border: none;
 }
 
-.mb-60{
+@keyframes pulse {
+
+    0%,
+        100% {
+            transform: scale(1);
+        }
+    
+        50% {
+            transform: scale(0.9);
+        }
+}
+
+.button-container {
+    overflow: hidden;
+}
+
+.mb-60 {
     margin-bottom: 60px;
 }
-.mt-140
-{
+
+.mt-140 {
     margin-top: 140px;
 }
 
@@ -20,8 +34,24 @@
     margin-bottom: 140px;
 }
 
+.container-1120 {
+    max-width: 1120px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+
 .container-hero {
     max-width: 1440px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+
+.container-1140 {
+    max-width: 1140px !important;
     margin-left: auto !important;
     margin-right: auto !important;
     padding-left: 12px !important;
@@ -48,10 +78,31 @@
         font-weight: 500;
         line-height: 20.16px;
         color: rgba(255, 255, 255, 1);
+        transition: color 0.3s ease;
     }
 
     li.nav-item>a:hover {
-        color: rgba(255, 0, 0, 0.772);
+        color: #ff6347;
+    }
+
+    .nav-item {
+        position: relative;
+    }
+
+    .nav-item::after {
+        content: '';
+        position: absolute;
+        left: 30%;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background: #ff6347;
+        transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    .nav-item:hover::after {
+        width: 100%;
+        left: 0;
     }
 }
 
@@ -78,6 +129,10 @@ button[aria-expanded="false"] span.cross {
     background-size: 100%;
 }
 
+.cursor {
+    cursor: pointer;
+}
+
 .bg-img {
     background-image: url(../image/sec-1-bg.png) !important;
     height: 100%;
@@ -94,6 +149,30 @@ button[aria-expanded="false"] span.cross {
     line-height: 76.8px;
 }
 
+
+img[alt="loading"] {
+    width: 300px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+
+img[alt="loading"]:hover {
+    transform: rotateY(180deg);
+}
+
+
+img[alt="img"] {
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img[alt="img"]:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+
 .pb-5 {
     padding-bottom: 40px !important;
 }
@@ -108,7 +187,7 @@ button[aria-expanded="false"] span.cross {
 }
 
 .watch-video {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 20.16px;
     letter-spacing: 0.05em;
@@ -133,6 +212,7 @@ button[aria-expanded="false"] span.cross {
     font-size: 16px;
     font-weight: 500;
     line-height: 20.16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section-2 {
@@ -161,6 +241,8 @@ button[aria-expanded="false"] span.cross {
     font-size: 16px;
     font-weight: 500;
     line-height: 20.16px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
@@ -173,9 +255,18 @@ button[aria-expanded="false"] span.cross {
 
 .black-box {
     border: 1px solid rgb(179, 179, 179);
-    min-height: 267px;
-    padding: 10px;
+    padding-bottom: 5px;
+    padding-top: 26px;
+    padding-left: 18px;
+    padding-right: 18px;
+    transition: box-shadow 0.3s ease;
 }
+
+.black-box:hover,
+input:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
 
 .numberic {
     font-size: 48px;
@@ -191,7 +282,7 @@ button[aria-expanded="false"] span.cross {
 }
 
 .mt {
-    margin-top: 150px;
+    margin-top: 110px;
 }
 
 img[alt="logo"] {
@@ -216,10 +307,12 @@ img[alt="logo"] {
 
 .submit-btn {
     background-color: white;
-    padding: 15px 50px;
+    padding: 20px 75px;
     font-size: 16px;
     font-weight: 500;
     line-height: 20.16px;
+    border: 1px solid black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 footer {
@@ -254,10 +347,16 @@ footer {
     color: rgb(206, 206, 206);
 }
 
-.bg-img {
+.bg-img-section-4{
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+.bg-img-section-4:hover {
     background-image: url(../image/sec-4-img.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    color: white;
 }
 
 .box {
@@ -291,7 +390,7 @@ textarea {
     font-size: 14px;
     font-weight: 400;
     line-height: 21.7px;
-    color: black;
+    color: rgb(58, 58, 58);
 }
 
 
