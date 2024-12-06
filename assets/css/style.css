@@ -447,4 +447,8 @@ img[alt="logo"] {
         border-radius: 12px;
     }
 
+    .svg{
+        width: 50%;
+    }
+
 }
