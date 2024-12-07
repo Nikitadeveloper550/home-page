@@ -206,7 +206,7 @@ img[alt="img"]:hover {
     background-size: cover;
     background-position: center;
     color: white;
-    transition:2s;
+    transition: 2s;
 }
 
 .section-4 {
@@ -447,7 +447,7 @@ img[alt="logo"] {
         border-radius: 12px;
     }
 
-    .svg{
+    .svg {
         width: 50%;
     }
 
